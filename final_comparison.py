@@ -1,6 +1,5 @@
 """
-Final comparison of all FSCV neurotransmitter classification models.
-Generates summary table, comparison figures, and per-concentration analysis.
+Cross-model comparison and per-concentration accuracy analysis.
 """
 import numpy as np
 from sklearn.metrics import accuracy_score, f1_score, confusion_matrix

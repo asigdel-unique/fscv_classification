@@ -1,11 +1,5 @@
 """
-Baseline classifiers for FSCV neurotransmitter identification.
-  1. Random Forest on hand-crafted features
-  2. SVM + PCA on hand-crafted features
-  3. Random Forest on raw CV (flattened)
-  4. SVM + PCA on raw CV (flattened)
-
-Establishes performance baselines before deep learning.
+Baseline classifiers: RF and SVM+PCA on both extracted features and raw CV.
 """
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier

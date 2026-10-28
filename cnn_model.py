@@ -1,11 +1,6 @@
 """
-1D Convolutional Neural Network for FSCV neurotransmitter classification.
-
-Architecture:
-  Input (1000 voltage points) -> Conv1D blocks -> Global pooling -> FC -> 4 classes
-
-Also includes a 1D-CNN with attention that highlights which voltage
-regions are most important for classification (interpretable for research).
+1D-CNN and Attention 1D-CNN for FSCV neurotransmitter classification.
+Attention variant produces voltage-region importance maps.
 """
 import numpy as np
 import torch

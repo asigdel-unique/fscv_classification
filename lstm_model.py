@@ -1,14 +1,6 @@
 """
-LSTM and GRU sequence classifiers for FSCV neurotransmitter identification.
-
-Treats the CV as a time series along the voltage sweep:
-  - The forward scan (-0.4V -> +1.3V) followed by reverse (+1.3V -> -0.4V)
-  - Recurrent models can capture the hysteresis dynamics between scans
-
-Models:
-  1. LSTM classifier
-  2. GRU classifier
-  3. Bidirectional GRU (processes CV in both voltage directions)
+Recurrent models (LSTM, GRU, Bidirectional GRU) for FSCV classification.
+Treats the CV as a sequence along the voltage sweep direction.
 """
 import numpy as np
 import torch
